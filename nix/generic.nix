@@ -9,15 +9,6 @@ rec {
     nativeBuildInputs = with ocamlPackages; [dune_2];
     propagatedBuildInputs = with ocamlPackages; [
       bigstringaf
-      findlib
-      httpaf
-      httpaf-lwt-unix
-      h2
-      h2-lwt-unix
-      logs
-      lwt_ssl
-      ssl
-      uri
     ];
 
     doCheck = false;

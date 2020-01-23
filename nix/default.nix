@@ -1,7 +1,8 @@
 { pkgsPath ? <nixpkgs> }:
 
 let
-  pkgs = import pkgsPath {};
+  pkgsUrl = "https://github.com/NixOS/nixpkgs-channels/archive/nixos-unstable.tar.gz";
+  pkgs = import (builtins.fetchTarball pkgsUrl) {};
 
   gitignoreSrc = pkgs.fetchFromGitHub {
     owner = "hercules-ci";

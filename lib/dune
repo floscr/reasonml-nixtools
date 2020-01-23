@@ -1,6 +1,4 @@
-(library
+(executable
  (name piaf)
- (public_name piaf)
  (preprocess future_syntax)
- (libraries httpaf h2 logs logs.lwt lwt lwt_ssl ssl httpaf-lwt-unix
-   h2-lwt-unix uri))
+ (libraries cmdliner))
