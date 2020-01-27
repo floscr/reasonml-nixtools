@@ -11,6 +11,7 @@ build: [
 ]
 depends: [
   "ocaml" {>= "4.06"}
+  "reason" {>= "3.0.0" & < "4.0.0"}
   "dune" {>= "1.8"}
   "ocaml-syntax-shims"
 ]

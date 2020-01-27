@@ -43,6 +43,7 @@ rec {
       fmt
       camlzip
       ezgzip
+      reason
     ];
 
     doCheck = false;
