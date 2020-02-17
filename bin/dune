@@ -1,4 +1,4 @@
 (executable
  (name carl)
  (preprocess future_syntax)
- (libraries cmdliner))
+ (libraries cmdliner unix))

@@ -10,13 +10,12 @@ let prompt_str =
   | Once => "once"
   | Never => "never";
 
-let rm = (prompt, recurse, files) =>
-  Printf.printf(
-    "prompt = %s\nrecurse = %B\nfiles = %s\n",
-    prompt_str(prompt),
-    recurse,
-    String.concat(", ", files),
-  );
+let rm = (prompt, recurse, files) => {
+  switch (File.readFile(Unix.getenv("HOME") ++ "/.asoundrc")) {
+    | Some(text) => text;
+    | _ => "No such file";
+  } |> Printf.printf("%s");
+};
 
 /* Command line interface */
 
