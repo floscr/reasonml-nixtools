@@ -1,4 +1,4 @@
 (executable
- (name piaf)
+ (name nixtools)
  (preprocess future_syntax)
  (libraries cmdliner))
